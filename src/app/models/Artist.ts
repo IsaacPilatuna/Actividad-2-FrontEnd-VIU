@@ -1,7 +1,7 @@
 export class Artist{
   constructor(
-    public firstName:string,
-    public lastName:string,
+    public id:number,
+    public fullName:string,
     public photoUrl:string,
     public dateOfBirth:Date
   ){}

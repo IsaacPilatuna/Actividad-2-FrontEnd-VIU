@@ -1,0 +1,17 @@
+.card{
+  margin-bottom: .5rem;
+  min-height: 128px;
+}
+
+.photo-container{
+  display: flex;
+  justify-content: center;
+}
+
+.artist-photo{
+  max-height: 96px;
+}
+
+.card-footer{
+  text-align: center;
+}

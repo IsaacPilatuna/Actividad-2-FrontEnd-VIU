@@ -10,6 +10,7 @@ import { VideoclipsComponent } from './videoclips/videoclips.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import { ArtistCardComponent } from './artists/components/artist-card/artist-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {MatIconModule} from '@angular/material/icon';
     AlbumsComponent,
     ArtistsComponent,
     VideoclipsComponent,
-    HomeComponent
+    HomeComponent,
+    ArtistCardComponent
   ],
   imports: [
     BrowserModule,
