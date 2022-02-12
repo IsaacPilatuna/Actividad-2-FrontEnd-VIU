@@ -3,6 +3,7 @@
   min-height: 128px;
 }
 
+
 .photo-container{
   display: flex;
   justify-content: center;
@@ -14,4 +15,12 @@
 
 .card-footer{
   text-align: center;
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn-dark:hover{
+  background-color: rgb(68, 68, 68);
 }

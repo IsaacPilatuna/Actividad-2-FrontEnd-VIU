@@ -7,9 +7,11 @@
     <div class="photo-container">
       <img class="artist-photo" [src]="artist.photoUrl" [alt]="artist.fullName">
     </div>
-  </div>
-  <div class="card-footer">
+    <p class="text-center">{{artist.dateOfBirth | date: 'longDate'}}</p>
 
-    {{artist.dateOfBirth | date: 'longDate'}}
+  </div>
+  <div class="card-footer buttons-container">
+    <button class="btn btn-dark" (click)="seeVideos()"><mat-icon>music_video</mat-icon> Videoclips</button>
+    <button class="btn btn-dark" (click)="seeAlbums()"><mat-icon>library_music</mat-icon>Álbumes</button>
   </div>
 </div>

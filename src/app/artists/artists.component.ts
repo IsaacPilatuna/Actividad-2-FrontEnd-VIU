@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Artist } from '../models/Artist';
 
 @Component({
@@ -19,9 +20,16 @@ export class ArtistsComponent implements OnInit {
     {id:7, fullName:'Paul McCartney', dateOfBirth: new Date(1942,5,18), photoUrl: "https://www.biography.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgxMjczMzM3MDgxNzAxNDc5/gettyimages-905846220.jpg"},
     {id:8, fullName:'Ozzy Osbourne', dateOfBirth: new Date(1948,11,3), photoUrl: "https://garajedelrock.com/wp-content/uploads/2020/08/Ozzy-Osbourne-1024x683.jpg"},
   ];
-  constructor() { }
+  constructor(private readonly _router:Router) { }
 
   ngOnInit(): void {
   }
 
+  seeVideoclips(artist:Artist){
+    this._router.navigate(['videoclips'],{queryParams:{idArtist:artist.id}});
+  }
+
+  seeAlbums(artist:Artist){
+    this._router.navigate(['albums'],{queryParams:{idArtist:artist.id}});
+  }
 }

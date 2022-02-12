@@ -10,6 +10,7 @@ import { VideoclipsComponent } from './videoclips/videoclips.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import { ArtistCardComponent } from './artists/components/artist-card/artist-card.component';
 import { VideoclipCardComponent } from './videoclips/components/videoclip-card/videoclip-card.component';
 import { SafeUrlPipe } from './pipes/safe-url.pipe';
@@ -30,7 +31,8 @@ import { SafeUrlPipe } from './pipes/safe-url.pipe';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

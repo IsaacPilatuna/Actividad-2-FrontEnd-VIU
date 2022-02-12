@@ -5,7 +5,7 @@
   <div class="card-body">
     <div class="row">
       <div *ngFor="let artist of artists" class="col-md-4">
-        <app-artist-card [artist]="artist"></app-artist-card>
+        <app-artist-card [artist]="artist" (onSeeVideosClicked)="seeVideoclips($event)" (onSeeAlbumsClicked)="seeAlbums($event)" ></app-artist-card>
       </div>
     </div>
   </div>
