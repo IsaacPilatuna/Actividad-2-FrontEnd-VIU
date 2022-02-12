@@ -1,0 +1,21 @@
+ul.navbar-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+
+}
+
+.title{
+  font-family:  'Permanent Marker', serif;
+}
+
+.navbar{
+  padding: 0.5rem;
+}
+
+.btn-lg{
+  font-size: 2rem;
+  mat-icon{
+    transform: scale(1.5);
+  }
+}

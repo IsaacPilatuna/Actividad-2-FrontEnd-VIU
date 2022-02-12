@@ -1,0 +1,12 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <h1 class="title"><img src="../../../assets/images/logoVIU.png"  height="64" alt="Logo VIU"> Biblioteca de Música</h1>
+  </a>
+  <ul class="navbar-nav">
+    <li class="nav-item" *ngFor="let route of routes">
+      <a href="#/{{route.route}}" class="btn btn-lg btn-outline-dark">
+         <mat-icon>{{route.matIcon}}</mat-icon> {{route.label}}
+      </a>
+    </li>
+  </ul>
+</nav>
