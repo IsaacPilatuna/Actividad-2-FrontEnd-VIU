@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { ArtistCardComponent } from './artists/components/artist-card/artist-card.component';
+import { VideoclipCardComponent } from './videoclips/components/videoclip-card/videoclip-card.component';
+import { SafeUrlPipe } from './pipes/safe-url.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ArtistCardComponent } from './artists/components/artist-card/artist-car
     ArtistsComponent,
     VideoclipsComponent,
     HomeComponent,
-    ArtistCardComponent
+    ArtistCardComponent,
+    VideoclipCardComponent,
+    SafeUrlPipe
   ],
   imports: [
     BrowserModule,
