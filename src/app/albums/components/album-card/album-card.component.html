@@ -4,19 +4,13 @@
       <h3>{{album.title| uppercase}}</h3>
     </div>
     <div class="card-body">
-      
-        <div class="center">
-          
-          <div class="photo-container">
-            <img src={{album.coverUrl}} alt={{album.title}}>
-          </div>
-            <br>
-            
-            <p [ngClass]="{'fecha': album.date}">Fecha de Release: {{album.date| titlecase}}</p>
-            <p [ngClass]="{'ventas': album.ventas}"> Ventas: {{album.ventas| titlecase}}</p>
-        </div>
-        
-      
+      <div class="photo-container">
+        <img src={{album.coverUrl}} alt={{album.title}}>
+      </div>
     </div>
+    <div class="card-footer text-center">
+      <h5>Fecha de Release: {{album.date| titlecase}}</h5>
+      <h6> Ventas: {{album.ventas| titlecase}}</h6>
+    </div>
+
   </div>
-  

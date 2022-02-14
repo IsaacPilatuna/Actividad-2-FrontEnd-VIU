@@ -25,10 +25,10 @@ export class VideoclipsComponent implements OnInit {
     {id:11, idArtist:6, title: "Imagine", url: "https://www.youtube-nocookie.com/embed/VOgFZfRVaww"},
     {id:12, idArtist:6, title: "Stand by me", url: "https://www.youtube-nocookie.com/embed/YqB8Dm65X18"},
 
-    {id:13, idArtist:7, title: "Wings 'Silly Love Songs", url: "https://www.youtube.com/embed/ap87QgZKTNw"},
-    {id:14, idArtist:7, title: "Say Say Say", url: "https://www.youtube.com/embed/aLEhh_XpJ-0"},
-    {id:15, idArtist:8, title: "Mama, I'm Coming Home", url: "https://www.youtube.com/embed/K0siYUjV9UM"},
-    {id:16, idArtist:8, title: "Dreamer", url: "https://www.youtube.com/embed/LCCiwPEdEpg"},
+    {id:13, idArtist:7, title: "Wings 'Silly Love Songs", url: "https://www.youtube-nocookie.com/embed/ap87QgZKTNw"},
+    {id:14, idArtist:7, title: "Say Say Say", url: "https://www.youtube-nocookie.com/embed/aLEhh_XpJ-0"},
+    {id:15, idArtist:8, title: "Mama, I'm Coming Home", url: "https://www.youtube-nocookie.com/embed/K0siYUjV9UM"},
+    {id:16, idArtist:8, title: "Dreamer", url: "https://www.youtube-nocookie.com/embed/LCCiwPEdEpg"},
   ];
   public videoclips:VideoClip[]=[];
 

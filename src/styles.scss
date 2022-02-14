@@ -36,7 +36,11 @@ $Actividad-2-FrontEnd-VIU-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: "Open Sans", sans-serif; background-image: url("assets/images/bgdisco.png"); background-size: cover;}
+body { margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: url("assets/images/music-pattern.jpg") repeat-x  fixed;
+  background-size: auto 100%;
+}
 
 mat-icon{
   vertical-align: middle;
@@ -55,10 +59,10 @@ mat-icon{
 
 .card-header{
   text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: black;
   color: white;
   border-radius: 1rem 1rem 0 0 !important;
-  
+
 }
 

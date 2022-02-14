@@ -24,15 +24,15 @@ export class AlbumsComponent implements OnInit {
     {id:8, idArtist:4, title: "Electric Ladyland",date:"25 de octubre de 1968",ventas:"8 millones de copias", coverUrl: "https://i.etsystatic.com/15564183/r/il/782669/2109335951/il_fullxfull.2109335951_8tkd.jpg"},
     {id:9, idArtist:5, title: "Blackstar",date:"8 de enero de 2016",ventas:"3 millones de copias", coverUrl: "https://lasoga.org/wp-content/uploads/2016/01/Blackstar-Vinyl-Cover-1024x1024.jpg"},
     {id:10, idArtist:5, title: "Best of Bowie",date:"22 de octubre de 2002",ventas:"582,704 de copias en vinilos", coverUrl: "https://img.discogs.com/zsP3gVDKoAfD_HyrxxZReuRTXF8=/fit-in/540x540/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12374045-1533972156-2388.jpeg.jpg"},
-    {id:11, idArtist:6, title: "Double Fantasy",date:"17 de noviembre de 1980",ventas:"10 millones de copias", coverUrl: "https://indierocks.b-cdn.net/wp-content/uploads/2020/11/Double-Fantasy-2020.jpg"},
+    {id:11, idArtist:6, title: "Double Fantasy",date:"17 de noviembre de 1980",ventas:"10 millones de copias", coverUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJu93sjWpizj1Yr6QT-gbQOIrCUQLp3rdoXABjjPL1QiCbbOo8cygsEmzJf4HFCpWvw8&usqp=CAU"},
     {id:12, idArtist:6, title: "Imagine",date:"9 de septiembre de 1971",ventas:"8 millones de copias", coverUrl: "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/IOBO3LOKRVAZ3LJLWFDXRKA2XA.jpg"},
-  
+
     {id:13, idArtist:7, title: "Band on the run",date:"7 de diciembre de 1973",ventas:"8.63 millones de copias", coverUrl: "https://thebeatlespy.files.wordpress.com/2011/12/band-on-the-run.jpg"},
     {id:14, idArtist:7, title: "McCartney",date:"17 de abril de 1970",ventas:"4.31 millones de copias", coverUrl: "https://thebeatlespy.files.wordpress.com/2011/04/mccartney-contraportada.jpg?w=355&h=355"},
-    
+
     {id:13, idArtist:8, title: "Blizzard of Ozz",date:"20 de septiembre de 1980 ",ventas:"7.37 millones de copias", coverUrl: "https://m.media-amazon.com/images/I/51Usum9KA6L._AC_SX425_.jpg"},
     {id:14, idArtist:8, title: "diary of a madman",date:"7 de noviembre de 1981 ",ventas:"5.65 millones de copias", coverUrl: "https://upload.wikimedia.org/wikipedia/en/4/44/Ozzy_Osbourne_Diary_of_a_Madman.jpg"},
-    
+
   ];
   public albums:Album[]=[];
 
