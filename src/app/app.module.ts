@@ -15,6 +15,7 @@ import { ArtistCardComponent } from './artists/components/artist-card/artist-car
 import { VideoclipCardComponent } from './videoclips/components/videoclip-card/videoclip-card.component';
 import { SafeUrlPipe } from './pipes/safe-url.pipe';
 import { AlbumCardComponent } from './albums/components/album-card/album-card.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AlbumCardComponent } from './albums/components/album-card/album-card.co
     ArtistCardComponent,
     VideoclipCardComponent,
     SafeUrlPipe,
-    AlbumCardComponent
+    AlbumCardComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
