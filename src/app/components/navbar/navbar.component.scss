@@ -6,7 +6,9 @@ ul.navbar-nav{
 }
 
 .title{
-  font-family:  'Permanent Marker', serif;
+font-family: 'Open Sans Condensed', sans-serif;
+ font-weight: bold;
+ 
 }
 
 .navbar{
@@ -14,9 +16,10 @@ ul.navbar-nav{
 }
 
 .btn-lg{
-  font-size: 2rem;
+  font-size: 1.5rem;
   mat-icon{
     transform: scale(1.5);
   }
-  font-family:  'Permanent Marker', serif;
+  font-family:  'Open Sans', sans-serif;
+  font-style: italic;
 }

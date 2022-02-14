@@ -1,0 +1,40 @@
+.wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  
+  .card{
+    margin-bottom: 1rem;
+  }
+
+ 
+  .photo-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .center{
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+.fecha{
+   
+   font-size: 150%;
+     
+}
+
+.ventas{
+  font-size: 120%;
+
+}
+
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50% ;
+}

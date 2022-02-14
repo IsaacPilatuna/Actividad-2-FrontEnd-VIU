@@ -14,6 +14,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { ArtistCardComponent } from './artists/components/artist-card/artist-card.component';
 import { VideoclipCardComponent } from './videoclips/components/videoclip-card/videoclip-card.component';
 import { SafeUrlPipe } from './pipes/safe-url.pipe';
+import { AlbumCardComponent } from './albums/components/album-card/album-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SafeUrlPipe } from './pipes/safe-url.pipe';
     HomeComponent,
     ArtistCardComponent,
     VideoclipCardComponent,
-    SafeUrlPipe
+    SafeUrlPipe,
+    AlbumCardComponent
   ],
   imports: [
     BrowserModule,
