@@ -16,6 +16,7 @@ import { VideoclipCardComponent } from './videoclips/components/videoclip-card/v
 import { SafeUrlPipe } from './pipes/safe-url.pipe';
 import { AlbumCardComponent } from './albums/components/album-card/album-card.component';
 import { ErrorComponent } from './error/error.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ErrorComponent } from './error/error.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatIconModule,
     MatTooltipModule
   ],

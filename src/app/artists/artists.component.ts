@@ -10,7 +10,9 @@ import { Artist } from '../models/Artist';
 export class ArtistsComponent implements OnInit {
 
   public title='Artistas';
-  public artists: Artist[] = [
+  public artistSearch="";
+
+  private allArtists:Artist[] = [
     {id:1, fullName:'Michael Jackson', dateOfBirth: new Date(1985,7,28), photoUrl: "https://www.hola.com/imagenes/biografias/michael-jackson/79629-jackson10.jpg"},
     {id:2, fullName:'Freddie Mercury', dateOfBirth: new Date(1946,8,5), photoUrl: "https://www.biografiasyvidas.com/biografia/m/fotos/mercury.jpg"},
     {id:3, fullName:'Elvis Presley', dateOfBirth: new Date(1935,0,8), photoUrl: "https://www.biografiasyvidas.com/biografia/p/fotos/presley_elvis_1.jpg"},
@@ -20,9 +22,12 @@ export class ArtistsComponent implements OnInit {
     {id:7, fullName:'Paul McCartney', dateOfBirth: new Date(1942,5,18), photoUrl: "https://www.biography.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgxMjczMzM3MDgxNzAxNDc5/gettyimages-905846220.jpg"},
     {id:8, fullName:'Ozzy Osbourne', dateOfBirth: new Date(1948,11,3), photoUrl: "https://garajedelrock.com/wp-content/uploads/2020/08/Ozzy-Osbourne-1024x683.jpg"},
   ];
+
+  public artists: Artist[] = [];
   constructor(private readonly _router:Router) { }
 
   ngOnInit(): void {
+    this.artists=[...this.allArtists];
   }
 
   seeVideoclips(artist:Artist){
@@ -31,5 +36,9 @@ export class ArtistsComponent implements OnInit {
 
   seeAlbums(artist:Artist){
     this._router.navigate(['albums'],{queryParams:{idArtist:artist.id}});
+  }
+
+  searchArtist(){
+    this.artists=[...this.allArtists.filter(artist=>artist.fullName.includes(this.artistSearch))]
   }
 }

@@ -12,6 +12,8 @@ export class AlbumsComponent implements OnInit {
 
   public title="Albums";
 
+  public albumSearch="";
+
   public allAlbums:Album[]=[
     {id:1, idArtist:1, title: "Thriller",date:"30 de noviembre de 1982",ventas:"66 millones de copias", coverUrl: "https://colectivosonoro.com/wp-content/uploads/2016/11/michael-jackson.jpeg"},
     {id:2, idArtist:1, title: "Off the Wall",date:"10 de agosto de 1979",ventas:"20 millones de copias", coverUrl: "https://www.lahiguera.net/musicalia/artistas/michael_jackson/disco/7353/michael_jackson_off_the_wall-portada.jpg"},
@@ -52,4 +54,7 @@ export class AlbumsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  searchAlbum(){
+    this.albums=[...this.allAlbums.filter(album=>album.title.includes(this.albumSearch))]
+  }
 }

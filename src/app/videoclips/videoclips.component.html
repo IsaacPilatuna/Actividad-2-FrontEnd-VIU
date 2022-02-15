@@ -1,6 +1,14 @@
 <div class="card">
   <div class="card-header">
     <h1>{{title}}</h1>
+    <form>
+      <div class="form-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><mat-icon>search</mat-icon> </span>
+        </div>
+        <input type="email" class="form-control" [(ngModel)]="videoclipSearch" (ngModelChange)="searchVideoclip()" placeholder="Buscar videoclip" name="videoclip">
+      </div>
+    </form>
   </div>
   <div class="card-body">
     <div class="row">

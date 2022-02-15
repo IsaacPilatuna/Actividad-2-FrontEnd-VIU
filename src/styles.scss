@@ -45,6 +45,7 @@ body {
 
 mat-icon{
   vertical-align: middle;
+  margin-right: .5rem;
 }
 
 .bg-light {
@@ -68,3 +69,12 @@ mat-icon{
 
 }
 
+
+.form-group{
+  display: flex;
+  justify-content: center;
+}
+
+.form-control{
+  max-width: 512px;
+}

@@ -11,6 +11,8 @@ export class VideoclipsComponent implements OnInit {
 
   public title="Videoclips";
 
+  public videoclipSearch="";
+
   public allVideoclips:VideoClip[]=[
     {id:1, idArtist:1, title: "Smooth Criminal", url: "https://www.youtube-nocookie.com/embed/h_D3VFfhvs4"},
     {id:2, idArtist:1, title: "They Don’t Care About Us", url: "https://www.youtube-nocookie.com/embed/QNJL6nfu__Q"},
@@ -46,6 +48,10 @@ export class VideoclipsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  searchVideoclip(){
+    this.videoclips=[...this.allVideoclips.filter(video=>video.title.includes(this.videoclipSearch))]
   }
 
 }
