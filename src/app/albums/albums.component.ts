@@ -55,6 +55,6 @@ export class AlbumsComponent implements OnInit {
   }
 
   searchAlbum(){
-    this.albums=[...this.allAlbums.filter(album=>album.title.includes(this.albumSearch))]
+    this.albums=[...this.allAlbums.filter(album=>album.title.toLowerCase().includes(this.albumSearch.toLowerCase()))]
   }
 }

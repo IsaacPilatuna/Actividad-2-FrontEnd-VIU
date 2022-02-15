@@ -12,7 +12,7 @@ export class ArtistsComponent implements OnInit {
   public title='Artistas';
   public artistSearch="";
 
-  private allArtists:Artist[] = [
+  public allArtists:Artist[] = [
     {id:1, fullName:'Michael Jackson', dateOfBirth: new Date(1985,7,28), photoUrl: "https://www.hola.com/imagenes/biografias/michael-jackson/79629-jackson10.jpg"},
     {id:2, fullName:'Freddie Mercury', dateOfBirth: new Date(1946,8,5), photoUrl: "https://www.biografiasyvidas.com/biografia/m/fotos/mercury.jpg"},
     {id:3, fullName:'Elvis Presley', dateOfBirth: new Date(1935,0,8), photoUrl: "https://www.biografiasyvidas.com/biografia/p/fotos/presley_elvis_1.jpg"},
@@ -39,6 +39,6 @@ export class ArtistsComponent implements OnInit {
   }
 
   searchArtist(){
-    this.artists=[...this.allArtists.filter(artist=>artist.fullName.includes(this.artistSearch))]
+    this.artists=[...this.allArtists.filter(artist=>artist.fullName.toLowerCase().includes(this.artistSearch.toLowerCase()))]
   }
 }

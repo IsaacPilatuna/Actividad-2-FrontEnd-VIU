@@ -51,7 +51,7 @@ export class VideoclipsComponent implements OnInit {
   }
 
   searchVideoclip(){
-    this.videoclips=[...this.allVideoclips.filter(video=>video.title.includes(this.videoclipSearch))]
+    this.videoclips=[...this.allVideoclips.filter(video=>video.title.toLowerCase().includes(this.videoclipSearch.toLowerCase()))]
   }
 
 }

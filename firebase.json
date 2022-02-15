@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/actividad-2-front-end-viu",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
