@@ -10,7 +10,7 @@ import { Album } from '../models/Album';
 
 export class AlbumsComponent implements OnInit {
 
-  public title="Albums";
+  public title="Álbumes";
 
   public albumSearch="";
 
